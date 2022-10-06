@@ -1,24 +1,48 @@
 
-function Home(){
+function Home({ weather ,city ,onClick}){
+    console.log(weather);
     return(
-        <>
-        <div className="home">
-            <div className="head">
+       <>
+       <div className="countries">
 
-                <select name="test" id="select-head">
-                    <option value="test">--Select country</option>
-                    <option value="test">test</option>
-                    <option value="test">test</option>
-                </select>
-                <h2>Weather of Countries</h2>
+      <h4>THis is Countries</h4>
+        <hr />
+        <div className="col-6">
+
+        <div className="anotherData1">
+            {/* THis is anatherData1 */}
+        <div className="name1">
+    
+           
+        <div className='select-head'>
+        {city.data.map((city, key) => {
+          return (
+            <div  key={key} onClick={() => onClick(city.name)}>                
+                  {city.name}
+
+            </div>
+          );
+        })}
+      </div> 
+        </div>
+        </div>
+        </div>      
+        </div>
+
+        <div className="home">
+            <div className="hea">
+            
             </div>
             <div className="body-home">
 
-                <h1>37</h1>
-                <h2>THis is contry state</h2>
+                <h1>{(weather && weather.current.wind_speed) || "..."}</h1>
+                <h2>THis is contry state</h2> 
+                
+      
             </div>
-        </div>
-        </>
+            </div>
+        
+       </>
     )
 }
 export default Home
