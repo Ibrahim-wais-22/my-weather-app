@@ -23,34 +23,39 @@
     /* border: 2px solid #000; */
     display: flex;
     justify-content: center;
+    background-image: url('../public/images/wather-backgroand.jpg');
   }
   /*---------- home--------------- */
   .col-9{
-    
-    width: 45%;
+    margin-right: 50px;
+    width: 50%;
     height: 75vh;
     display: flex;
     justify-content: center;
     /* align-items: center; */
     /* padding: 100px 200px; */
-    color: #FFF;
+    color: rgb(0, 0, 0);
     
-    background: rgba(255, 255, 255, 0.25);
-    border-radius: 16px 0px 0px 16px;
+    /* background: rgba(255, 255, 255, 0.25); */
+    background: rgb(144 128 128 / 18%);
+    border-radius: 16px 16px 16px 16px;
     box-shadow: 0 4px 30px rgba(0, 0, 0, 0);
     backdrop-filter: blur(3.4px);
     -webkit-backdrop-filter: blur(3.4px);
     border: 0px solid rgba(255, 255, 255, 0.58);
     margin: 50px 0px 50px 50px;
   }
+ 
 .head{
   margin-top: 30px;
   display: flex;
   justify-content: space-around;
 }
-#select-head{
-  position: relative;
-  right: 25%;
+.select-head{
+  width: 35%;
+  height: 30vh;
+  overflow: scroll;
+  cursor: pointer;
   /* background-color: rgba(255, 255, 255, 0.25); */
   border: none;
   /* ------ */
@@ -59,8 +64,13 @@
   box-shadow: 0 4px 30px rgba(0, 0, 0, 0);
   backdrop-filter: blur(3.4px);
   -webkit-backdrop-filter: blur(3.4px);
+  /* : rgb(255 255 255 / 10%); */
   
 }
+select:option{
+  background:rgba(73, 52, 52, 0.1) ;
+}
+
 .body-home{
   margin-top: 48%;
 }
@@ -68,9 +78,33 @@
   font-size: 7rem;
   text-align: center;
 }
+/* -------left------ */
+.left{
+  width: 100%;
+  height: 75vh;
+  
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  
+}
+
+ .nameCity{ 
+ display: flex;
+align-items: center; 
+font-size: 2rem;
+} 
+
+.temp{
+
+font-size: 5rem;
+
+}
+
 /*------- countires---- */
 .col-3{
-  width: 25%;
+  /* width: 25%; */
   height: 75vh;
   display: flex;
   justify-content: center;
@@ -99,12 +133,20 @@
 .anotherData1{
   margin-top: 15px;
   display: flex;
-  justify-content: space-between;
+  flex-wrap: wrap;
 }
 .anotherData2{
   margin-top: 15px;
   display: flex;
   justify-content: space-between;
+}
+.city{
+  margin: 2px;
+  cursor: pointer;
+}
+.cityCont{
+  display: flex;
+  flex-wrap: wrap;
 }
 
 
