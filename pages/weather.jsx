@@ -40,13 +40,16 @@ const Weathers = () => {
         return <div>Loading...</div>;
       }
       console.log(weather);
-      return (
-        <div className="cointainer">
-          {" "}
-          <PageWeather cities={cities} weather={weather} handleClick={handleClick} />
-          {/* <PageWeather  /> */}
-        </div>
-  );
+  return (
+    <div className="cointainer">
+     
+      <PageWeather cities={cities} weather={weather} handleClick={handleClick} />
+      {/* <PageWeather  /> */}
+    </div>
+        
+
+        
+    );
 };
 
 export default Weathers;
