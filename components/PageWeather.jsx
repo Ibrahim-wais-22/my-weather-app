@@ -29,7 +29,7 @@ const PageWeather = ({ cities, weather, handleClick }) => {
             {/* {weather.current.weather_descriptions[0]} */}
             </p>
       </div>
-      {/* <div
+     <div
         className="select-head"
         style={{
           width: "30%",
@@ -50,7 +50,7 @@ const PageWeather = ({ cities, weather, handleClick }) => {
             {city.capital}
           </span>
         ))}
-      </div> */}
+      </div> 
     </div>
   );
 };

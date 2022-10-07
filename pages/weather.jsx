@@ -1,9 +1,9 @@
 import { useEffect, useState } from "react";
 import PageWeather from "../components/PageWeather";
 
-const Weather = () => {
+const Weathers = () => {
     const [cities, setCities] = useState();
-    const [selectedCity, setSelectedCity] = useState("Tokyo");
+    const [selectedCity, setSelectedCity] = useState("London");
     const [weather, setWeather] = useState();
   
     const handleClick = (name) => {
@@ -49,4 +49,4 @@ const Weather = () => {
   );
 };
 
-export default Weather;
+export default Weathers;
