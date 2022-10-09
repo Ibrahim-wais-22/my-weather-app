@@ -11,7 +11,7 @@ const Weathers = () => {
     };
 
     useEffect(() => {
-        fetch("http://countriesnow.space/api/v0.1/countries/capital/")
+        fetch("https://countriesnow.space/api/v0.1/countries/capital/")
           .then((response) => response.json())
           .then((response) => {
             setCities(response);

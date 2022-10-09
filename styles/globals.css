@@ -23,7 +23,8 @@
     /* border: 2px solid #000; */
     display: flex;
     justify-content: center;
-    background-image: url('../public/images/wather-backgroand.jpg');
+    background-image: url('../public/images/unnamed.jpg');
+    
   }
   /*---------- home--------------- */
   .col-9{
@@ -35,14 +36,16 @@
     /* align-items: center; */
     /* padding: 100px 200px; */
     color: rgb(0, 0, 0);
+
+    /* From https://css.glass */
+    background: rgba(255, 255, 255, 0.32);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(7.2px);
+    -webkit-backdrop-filter: blur(7.2px);
+    border: 1px solid rgba(255, 255, 255, 0.8);
     
-    /* background: rgba(255, 255, 255, 0.25); */
-    background: rgb(144 128 128 / 18%);
-    border-radius: 16px 16px 16px 16px;
-    box-shadow: 0 4px 30px rgba(0, 0, 0, 0);
-    backdrop-filter: blur(3.4px);
-    -webkit-backdrop-filter: blur(3.4px);
-    border: 0px solid rgba(255, 255, 255, 0.58);
+    
     margin: 50px 0px 50px 50px;
   }
  
@@ -148,7 +151,9 @@ font-size: 5rem;
   display: flex;
   flex-wrap: wrap;
 }
-
+.imgw{
+  border-radius: 30px;
+}
 
 /*---------- another----------- */
 /* .col-bottom{
