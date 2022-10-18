@@ -23,7 +23,7 @@ export default function Main() {
     
     useEffect(() => {
       fetch(
-        `https://api.weatherstack.com/current? ? access_key = 5c4d64c114b0322c2b3cb0ec4a031979&query=${selectedCity}`
+        `http://api.weatherstack.com/current? ? access_key = 5c4d64c114b0322c2b3cb0ec4a031979&query=${selectedCity}`
       )
         .then((response) => response.json())
         .then((response) => {
