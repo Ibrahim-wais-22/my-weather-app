@@ -12,7 +12,7 @@ const PageWeather = ({ cities, weather, handleClick }) => {
     >
     <div className="left ">
     
-        <div className="imgw"><Image className="imgw" src={weather.current.weather_icons[0]} width={50} height={50} /></div> 
+        {/* <div className="imgw"><Image className="imgw" src={weather.current.weather_icons[0]} width={50} height={50} /></div>  */}
         <p className="temp"> {weather.current.temperature}°C</p>
         <div className="nameCity">
           <p className="country">{weather.location.country}/</p>
